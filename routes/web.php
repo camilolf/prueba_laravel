@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('users/', function () {
+    return 'USERS';
+});
+
+Route::get('nombre/{nombre}', function ($nombre) {
+    return 'Mi nombre es '.$nombre;
+});
