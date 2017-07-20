@@ -20,7 +20,7 @@ Route::get('users/', function () {
 });
 
 Route::get('nombre/{nombre}', function ($nombre) {
-    return 'Mi nombre es '.$nombre;
+    return view('vista');
 });
 
 Route::get('controlador', 'PruebaController@index');
