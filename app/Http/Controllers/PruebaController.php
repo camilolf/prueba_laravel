@@ -11,6 +11,14 @@ class PruebaController extends Controller
     }
 
     public function nombre($nombre){
-    	return 'Este es el nombre:'.$nombre;
+
+    	JavaScript::put([
+            'foo' => 'bar',
+            //'user' => User::first(),
+            'age' => 29
+        ]);
+
+        return View::make('hello');
+    	//return 'Este es el nombre:'.$nombre;
     }
 }
